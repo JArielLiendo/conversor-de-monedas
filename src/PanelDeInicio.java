@@ -3,30 +3,20 @@ import java.util.spi.AbstractResourceBundleProvider;
 public class PanelDeInicio {
     String parDeCambio;
     int opcion;
-//    double cantidadACambiar;
-//    double ratio;
 
     String panel =  """ 
-               ************************************************
-               Sea bienvenido al conversor de monedas
-               1) Dólar --> Peso Argentino
-               2) Peso Argentino --> Dólar
-               3) Dólar --> Real
-               4) Real --> Dólar
-               5) Dólar --> Peso Colombiano
-               6) Peso Colombiano --> Dólar
-               7) Salir
-               Elija una opción válida.
-               ************************************************
+            ************************************************
+            Sea bienvenido al conversor de monedas
+             1) Dólar ==> Peso Argentino
+             2) Peso Argentino ==> Dólar
+             3) Dólar ==> Real
+             4) Real ==> Dólar
+             5) Dólar ==> Peso Colombiano
+             6) Peso Colombiano ==> Dólar
+             7) Salir
+             Elija una opción válida.
+            ************************************************
             """;
-//    public PanelDeInicio(String parDeCambio, int opcion, double cantidadACambiar){
-//        this.parDeCambio = parDeCambio;
-//        this.opcion = opcion;
-//        this.cantidadACambiar= cantidadACambiar;
-//    }
-//    public PanelDeInicio(RatioDeCambio ratioDeCambio){
-//        this.ratio = Integer.parseInt(ratioDeCambio.conversion_rate());
-//    }
 
     public String seleccionaParDeCambio (int opcion) {
 

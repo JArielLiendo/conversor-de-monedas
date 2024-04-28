@@ -26,9 +26,7 @@ public class ConsultaCotizacion {
 
             Gson gson= new Gson();
             RatioDeCambio ratioDeCambio = gson.fromJson(json, RatioDeCambio.class);
-            //System.out.println("Gson: "+ratioDeCambio);
-           // System.out.println(ratioDeCambio.conversion_rate());
-            //var ratio=ratioDeCambio.conversion_rate();
+
             return ratioDeCambio.conversion_rate();
 
         }catch (IOException | InterruptedException e) {
