@@ -35,16 +35,4 @@ git clone https://github.com/JArielLiendo/conversor-de-monedas.git
 3. Asegúrate de tener las dependencias necesarias instaladas, como Gson.
 4. Ejecuta la aplicación.
 
-## Contribución
 
-Si deseas contribuir a este proyecto, sigue estos pasos:
-
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commits (`git commit -am 'Agrega nueva característica'`).
-4. Sube tus cambios (`git push origin feature/nueva-caracteristica`).
-5. Abre un pull request.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE.txt)
