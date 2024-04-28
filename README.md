@@ -10,6 +10,8 @@ Este es un programa en Java que permite convertir cantidades de una divisa a otr
 - Permite al usuario ingresar el importe a intercambiar.
 - Muestra el valor de la conversión y un mensaje informativo sobre el monto cambiado y las divisas involucradas.
 
+<img src="imagenes/panel.png" width="300">
+
 ## Uso
 
 1. Ejecutar la aplicación.
