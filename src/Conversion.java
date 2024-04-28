@@ -9,6 +9,10 @@ public class Conversion {
    }
 
     public double convierte(double cantidad, double ratio){
+       if (cantidad <= 0){
+           System.out.println("Ingrese un valor válido");
+
+       }
         return cantidad * ratio;
     }
 
