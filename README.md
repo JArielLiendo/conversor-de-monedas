@@ -9,9 +9,9 @@ Este es un programa en Java que permite convertir cantidades de una divisa a otr
 - Solicita las tasas de cambio de una API externa y las procesa utilizando Gson.
 - Permite al usuario ingresar el importe a intercambiar.
 - Muestra el valor de la conversión y un mensaje informativo sobre el monto cambiado y las divisas involucradas.
-
+<div align="center">
 <img src="imagenes/panel.png" width="300">
-
+</div>
 ## Uso
 
 1. Ejecutar la aplicación.
