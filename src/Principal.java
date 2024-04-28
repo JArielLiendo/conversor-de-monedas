@@ -43,7 +43,7 @@ public class Principal {
                                     " [" + monedaDestino + "]");
                             break;
                         } else {
-                            System.out.println("El valor ingresado debe ser mayor que 0 (cero)");
+                            System.out.println("El valor ingresado debe ser mayor que 0 (cero)\n");
                         }
                     }
 
