@@ -28,7 +28,7 @@ Este es un programa en Java que permite convertir cantidades de una divisa a otr
 1. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/tu_usuario/conversor-de-divisas.git
+git clone https://github.com/JArielLiendo/conversor-de-monedas.git
 ```
 
 2. Importa el proyecto en tu IDE favorito.
