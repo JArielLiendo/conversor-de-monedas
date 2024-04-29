@@ -1,5 +1,8 @@
 import com.google.gson.JsonSyntaxException;
-import java.util.InputMismatchException;
+import com.jorgeliendo.conversorDeMonedas.archivo.GenerarArchivoDeIntercambios;
+import com.jorgeliendo.conversorDeMonedas.archivo.RegistroIntercambios;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Principal {
@@ -11,6 +14,7 @@ public class Principal {
                 PanelDeInicio panelDeInicio = new PanelDeInicio();
                 System.out.println(panelDeInicio.panel);
                 double cantidadACambiar;
+                double resultado;
 
                 try {
 
@@ -35,17 +39,23 @@ public class Principal {
                         cantidad = cantidad.replace(",", ".");
 
                         cantidadACambiar = Double.parseDouble(cantidad);
+
                         if (cantidadACambiar > 0) {
                             Conversion conversion = new Conversion(cantidadACambiar, ratio);
-                            var resultado = conversion.convierte(cantidadACambiar, ratio);
+                            resultado = conversion.convierte(cantidadACambiar, ratio);
                             System.out.println("A cambiado " + cantidadACambiar + " [" +
                                     monedaBase + "] por ==> " + resultado +
                                     " [" + monedaDestino + "]");
+
                             break;
                         } else {
                             System.out.println("El valor ingresado debe ser mayor que 0 (cero)\n");
                         }
                     }
+
+                    RegistroIntercambios registroIntercambios= new RegistroIntercambios(parDeCambio, cantidadACambiar, resultado);
+                    GenerarArchivoDeIntercambios generarArchivoDeIntercambios = new GenerarArchivoDeIntercambios();
+                    generarArchivoDeIntercambios.guardarIntercambio(registroIntercambios);
 
                 } catch (JsonSyntaxException e) {
                     System.out.println("Ingrese una opción valida entre 1 y 7.");
@@ -54,6 +64,8 @@ public class Principal {
 
                     System.out.println("Verifique los datos ingresados");
 
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
             }
     }
